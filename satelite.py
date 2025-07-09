@@ -5,7 +5,7 @@ from PIL import Image
 import os
 import requests
 from io import BytesIO
-import gdown  # Special package for Google Drive downloads
+
 import zipfile  # Only needed if your model is zipped
 
 # Configuration - IMPORTANT: Update these with your actual Google Drive link
