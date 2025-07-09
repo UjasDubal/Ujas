@@ -1,13 +1,13 @@
 import streamlit as st
 import numpy as np
 from PIL import Image
-
+from tensorflow.keras.models import load_model
+from tensorflow.keras.preprocessing import image
 import os
 import requests
 from io import BytesIO
-
+import gdown  # Special package for Google Drive downloads
 import zipfile  # Only needed if your model is zipped
-
 # Configuration - IMPORTANT: Update these with your actual Google Drive link
 GOOGLE_DRIVE_LINK = "https://drive.google.com/uc?id=1jEowV_m9ojgGuE7CAqPgPKKwUGZixWqg"  # Replace with your actual file ID
 LOCAL_MODEL_FILENAME = "Modelenv.v1.h5"
